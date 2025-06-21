@@ -1,18 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  text-align: center;
+  padding: 50px;
 }
 
 .container {
-  text-align: center;
-  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -21,22 +20,17 @@ body {
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+ul.links {
+  list-style: none;
+  padding: 0;
 }
 
-.tagline {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+ul.links li {
+  margin: 10px 0;
 }
 
-.contract-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #04d9ff;
-  color: #000;
+ul.links a {
   text-decoration: none;
-  border-radius: 5px;
+  color: #007bff;
   font-weight: bold;
 }
