@@ -1,21 +1,42 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: white;
-    text-align: center;
-    padding: 50px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .container {
-    max-width: 600px;
-    margin: auto;
+  text-align: center;
+  padding: 20px;
 }
+
 .logo {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
 }
-.banner {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 12px;
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contract-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #04d9ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
