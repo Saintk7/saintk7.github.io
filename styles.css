@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.logo {
+    width: 64px;
+    height: 64px;
+}
+.banner {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+}
