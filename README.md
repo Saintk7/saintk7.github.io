@@ -1,3 +1,5 @@
+this is the read.me file, give me the updated version so I can paste it in
+
 ---
 # 📄 STK7 Governance & Staking Module — README.md
 
@@ -30,3 +32,34 @@ yarn dev
 
 # Build staking frontend (Vite + Tailwind)
 yarn build
+```
+
+Contracts are written using Anchor, and deployment is supported on **devnet** first. Mainnet integration pending community audit.
+
+---
+
+## ⚙️ Folder Structure
+
+```
+/anchor       → staking Solana program (Anchor)
+/frontend     → governance & staking frontend (Vite)
+/scripts      → deploy scripts, CLI staking helpers
+```
+
+---
+
+## 🔐 Audit Notes
+
+This is an **experimental MVP**, not audited for production-scale staking or treasury handling. Use caution and consider sandbox deployments before going live with real funds.
+
+Pull requests improving safety, modularity, or compatibility are welcome!
+
+---
+
+## 📄 License
+
+[MIT](../LICENSE)
+
+---
+
+_Built with care by the STK7 team. No VCs. No presale. Just code._
