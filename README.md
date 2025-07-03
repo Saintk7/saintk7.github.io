@@ -1,83 +1,71 @@
-# 🛰️ SaintK7 — Solana-Native Token Ecosystem
+---
+# 📄 STK7 Governance & Staking Module — README.md
 
-**SaintK7 (STK7)** is a lightweight, open-source token project deployed on the Solana blockchain. Born in Geneva and shaped by both human and AI collaboration, it reflects a new path for crypto projects — rooted in public ownership, zero VC involvement, and practical decentralization.
+This subproject contains the **governance and staking MVP** for the [SaintK7](https://saintk7.com) token on Solana. It offers lightweight tools for:
 
-This is not a meme. It’s a mirror — showing what’s possible when you build with precision and transparency from day one.
+- 🗳️ Proposal-based governance interface (off-chain or hybrid)
+- 🔒 STK7 token staking with fixed APY (on devnet/mainnet)
+- 🧪 Guardrails for secure usage in the early phases
 
 ---
 
-## 🎯 Project Purpose
+## 🚀 Features
 
-SaintK7 was launched to:
-
-- ✅ Demonstrate how to build and deploy a token **without hype, VCs, or presale**
-- ✅ Offer simple tooling for **wallet interaction, governance, and staking**
-- ✅ Open-source every component from **deployment to frontend**
-- ✅ Create a **self-custodied, builder-first** token model
-
----
-
-## 🔗 Token Details
-
-- **Mainnet Token:** [`BmgpsJJ38sJArtd2KNrj1WCwwyqFdr3op9yf5iT3iGiE`](https://solscan.io/token/BmgpsJJ38sJArtd2KNrj1WCwwyqFdr3op9yf5iT3iGiE)  
-- **Total Supply:** 21,000,000 STK7  
-- **Explorer:** [View on Solscan](https://solscan.io/token/BmgpsJJ38sJArtd2KNrj1WCwwyqFdr3op9yf5iT3iGiE)  
-- **VC Allocation:** None  
-- **Presale:** None  
-- **Homepage:** [saintk7.com](https://saintk7.com)
+- ✅ Staking contract (Solana Program)
+- ✅ Web frontend integration
+- ✅ Hardcoded staking period and return logic
+- ✅ MVP-level proposal voting UI (mock + snapshot compatible)
+- ✅ Fully open-source (MIT)
 
 ---
 
-## 🧭 Why Solana?
+## 🔧 Dev Instructions
 
-We chose **Solana** for its:
+```bash
+# Install dependencies
+yarn install
 
-- High-speed, low-cost transactions
-- Strong developer ecosystem
-- Ideal architecture for clean public tokens
-- Real-time feedback loops for governance and experimentation
+# Run local dev server
+yarn dev
 
-STK7 is built for real use on a chain that can handle it.
+# Build staking frontend (Vite + Tailwind)
+yarn build
+```
 
----
-
-## 💡 Roadmap & Milestones
-
-### ✅ Phase 1: Token & Launch Hub
-- [x] Launch STK7 on Solana mainnet
-- [x] Publish homepage and GitHub Pages repo
-- [x] Zero-cost, zero-VC release
-
-### 🛠️ Phase 2: Open Source Tooling (In Progress)
-- CLI scripts to interact with STK7
-- Wallet integration examples
-- Token metadata & governance functions
-
-### 🧪 Phase 3: Governance & Staking MVP (Coming)
-- Lightweight staking + proposal interface
-- Fixed return model with community oversight
+Contracts are written using Anchor, and deployment is supported on **devnet** first. Mainnet integration pending community audit.
 
 ---
 
-## 🤝 How to Contribute
+## ⚙️ Folder Structure
 
-We welcome contributions of all kinds:
+```
+/anchor       → staking Solana program (Anchor)
+/frontend     → governance & staking frontend (Vite)
+/scripts      → deploy scripts, CLI staking helpers
+```
 
-- Improve frontend design or UX
-- Build tools to interact with STK7 token
-- Review or extend the governance logic
-- Translate docs or submit issues
+---
 
-### 🚀 Get Started
-1. Fork this repo
-2. Make your changes on a new branch
-3. Submit a Pull Request with clear context
+## 🧠 Contribute
 
-All contributions are MIT licensed and reviewed publicly.
+Please refer to the root [`CONTRIBUTING.md`](../CONTRIBUTING.md) file for contribution rules and workflow.
+
+All smart contracts are MIT licensed and open for reuse with attribution.
+
+---
+
+## 🔐 Audit Notes
+
+This is an **experimental MVP**, not audited for production-scale staking or treasury handling. Use caution and consider sandbox deployments before going live with real funds.
+
+Pull requests improving safety, modularity, or compatibility are welcome!
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License:
+[MIT](../LICENSE)
 
+---
+
+_Built with care by the STK7 team. No VCs. No presale. Just code._
